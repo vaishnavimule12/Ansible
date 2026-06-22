@@ -10,4 +10,4 @@
       debug:
        msg: "the animal is {{animal}}"
       vars:
-        - animal: "tiger"
+        animal: "tiger"
