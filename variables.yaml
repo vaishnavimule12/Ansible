@@ -1,7 +1,7 @@
 - name : "Variables Learning"
   hosts : all
   vars : 
-    animal :"lion"
+    - animal :"lion"
   tasks :
     - name: "Print the animal"
       debug:
@@ -10,4 +10,4 @@
       debug:
        msg: "the animal is {{animal}}"
       vars:
-        animal: "tiger"
+        - animal: "tiger"
