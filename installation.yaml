@@ -1,6 +1,10 @@
 - name : install packages
   hosts : all
+  become : True
   tasks :
+    - name : update apt
+      shell :
+        cmd : apt-get update
     - name : install apache2
       apt:
         name: apache2
