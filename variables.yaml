@@ -2,10 +2,15 @@
   hosts : all
   vars : 
     animal : "lion"
+  vars_files:
+    - ./vars.txt
   tasks :
-    - name: "Print the animal"
+    - name: "Print the animal 1"
       debug:
         msg: "the animal is {{animal}}"
+    - name: "Print the animal 2"
+      debug:
+        msg: "the animal is {{animal}}"   
     - name: "print animal with using local"
       debug:
         msg: "the animal is {{animal}}"
