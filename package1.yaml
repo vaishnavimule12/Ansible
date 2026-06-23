@@ -6,7 +6,7 @@
       package :
         name: httpd
         state: present
-        ignore_errors: True  
+      ignore_errors: True  
  
     - name : install apache2
       package :
