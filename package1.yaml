@@ -1,13 +1,14 @@
 - name : installation package
   hosts : all
   become : true
-  - name : install httpd
-    package :
-      name: httpd
-      state: present  
-
-  - name : install apache2
-    package :
-      name: apache2
-      state: present
-    ignore_errors: True
+  tasks :
+    - name : install httpd
+      package :
+        name: httpd
+        state: present  
+ 
+    - name : install apache2
+      package :
+        name: apache2
+        state: present
+      ignore_errors: True
