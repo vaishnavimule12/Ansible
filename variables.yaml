@@ -1,9 +1,9 @@
 - name : "Variables Learning"
   hosts : all
-  vars : 
-    animal : "lion"
-  vars_files:
-    - ./vars.txt
+  #vars : 
+   # animal : "lion"
+  #vars_files:
+   # - ./vars.txt
   vars_prompt:
     - name : animal
       prompt : "Please enter the animal name"
