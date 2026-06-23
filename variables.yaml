@@ -1,13 +1,13 @@
 - name : "Variables Learning"
   hosts : all
   vars : 
-    animal :"lion"
+    animal : "lion"
   tasks :
     - name: "Print the animal"
       debug:
-       msg: "the animal is {{animal}}"
+        msg: "the animal is {{animal}}"
     - name: "print animal with using local"
       debug:
-       msg: "the animal is {{animal}}"
+        msg: "the animal is {{animal}}"
       vars:
         animal: "tiger"
