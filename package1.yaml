@@ -5,10 +5,10 @@
     - name : install httpd
       package :
         name: httpd
-        state: present  
+        state: present
+        ignore_errors: True  
  
     - name : install apache2
       package :
         name: apache2
         state: present
-      ignore_errors: True
