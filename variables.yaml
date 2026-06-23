@@ -19,9 +19,10 @@
         msg: "the animal is {{animal}}"
       vars:
         animal: "tiger"
+
     - name : get hostname 
       shell : hostname
-      register: host-name
+      register: hostname
     - name : print hostname
       debug:
-        msg: "the hostname is {{host-name}}"
+        msg: "the hostname is {{hostname}}"
