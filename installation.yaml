@@ -13,3 +13,4 @@
       yum:
         name: httpd
         state: present
+      ignore_errors: True
