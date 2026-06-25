@@ -15,10 +15,10 @@
     - name : add multiple line
       blockinfile :
         path : /var/www/html/index.html
+        marker : "<!--{mark} ANSIBLE MANAGED BLOCK -->"
         block : |
           <h1> Hi this is use for ansible </h1>
           <h2> This is second line </h2>
-        marker : "<--{mark} NSIBLE MANAGED BLOCK -->"
 
     - name : start apache2 service
       service :
