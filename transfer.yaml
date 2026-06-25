@@ -7,18 +7,6 @@
         src : index.html
         dest : /var/www/html/index.html
 
-    - name : add one line
-      lineinfile :
-        path : /var/www/html/index.html
-        line : "<h1> Hi this is use for ansible </h1>"
-      
-    - name : add multiple line
-      blockinfile :
-        path : /var/www/html/index.html
-        block : |
-          <h1> Hi this is use for ansible </h1>
-          <h2> This is second line </h2>
-
     - name : start apache2 service
       service :
         name : apache2
