@@ -1,0 +1,11 @@
+- name : gather information from ansible setup file
+  hosts : all
+  become : true
+  tasks : 
+    - name : collect ansible distribution
+      debug :
+        msg : "{{ ansible_distribution}}"
+     
+    - name : collect ansible os family
+      debug :
+        msg : "{{ ansible_os_family}}"

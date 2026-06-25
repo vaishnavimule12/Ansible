@@ -10,7 +10,7 @@
     - name : add one line
       lineinfile :
         path : /var/www/html/index.html
-        regexp : '^<h1>'
+        regexp : '^/<h1>'
         line : "<h1> Hi this is use for ansible </h1>"
       
     - name : add multiple line
