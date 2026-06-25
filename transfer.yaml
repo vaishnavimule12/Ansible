@@ -1,0 +1,14 @@
+- name : package copy
+  hosts : all
+  become : true
+  tasks : 
+    - name : copy html file
+      copy :
+        src : index.html
+        dest : /var/www/html/index.html
+
+    - name : start apache2 service
+      service :
+        name : apache2
+        state : started
+      when : ansible_os_family == "Debian"
