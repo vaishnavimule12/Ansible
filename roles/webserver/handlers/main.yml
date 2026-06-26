@@ -1,0 +1,8 @@
+#SPDX-License-Identifier: MIT-0
+---
+# handlers file for webserver
+- name : start service
+  service :
+    name: "{{package}}"
+    state: started
+    enabled: true
