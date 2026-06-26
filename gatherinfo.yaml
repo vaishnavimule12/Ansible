@@ -5,7 +5,11 @@
     - name : collect ansible distribution
       debug :
         msg : "{{ ansible_distribution}}"
+      tags :
+        - task1
      
     - name : collect ansible os family
       debug :
         msg : "{{ ansible_os_family}}"
+      tags :
+        - task2
