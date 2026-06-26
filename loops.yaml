@@ -1,0 +1,19 @@
+- name : learn ,oop in multiple domain
+  hosts : all
+  become : true
+  tasks :
+    - name : prints fruits name
+      debug : 
+        msg : "{{item}}"
+      loop :
+      - apple
+      - banana
+      - mango
+
+    - name : install multiple packages
+      package :
+        name : "{{item}}"
+      loop :
+      - vim
+      - wget
+      - apache2
